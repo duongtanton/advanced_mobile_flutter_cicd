@@ -14,7 +14,7 @@ and flow the steps below.
    - Important step: You must sign your app follow <a href="https://docs.flutter.dev/deployment/android#sign-the-app">hear</a>. 
 
 3. Config your repository to build, test and release follow the steps bellow:
-    - Add environment secrets: https://github.com/<username>/<repo-name>/settings/secrets/actions
+    - Add environment secrets: https://github.com/username/repo-name/settings/secrets/actions
         - Add `KEYSTORE_BASE64` secret: 
           - cmd: base64 -i <path-to-file-keystore> -w 0. Then copy the result and paste to secret value.
         - Add `STORE_PASSWORD` secret:
