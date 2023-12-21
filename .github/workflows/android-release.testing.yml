@@ -1,9 +1,8 @@
-name: Android Release
+name: Android Release Testing
 
 on:
   push:
-    branches: [ "main", "beta", "testing"]
-  workflow_dispatch:
+    branches: "testing"
 
 jobs:
   version:
@@ -66,10 +65,10 @@ jobs:
         run: flutter pub get
 
       - name: Start Android Release Test
-        run: flutter test
+        run: flutter test --dart-define=FLAVOR=testing
 
       - name: Start Android Release Build
-        run: flutter build appbundle
+        run: flutter build appbundle --dart-define=FLAVOR=testing
 
       - name: Upload Android Release
         uses: actions/upload-artifact@v2
