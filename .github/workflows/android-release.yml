@@ -94,8 +94,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: v${{ needs.version.outputs.value }}+${{ github.run_number }}
+          release_name: Release v${{ needs.version.outputs.value }}+${{ github.run_number }}
           body: ${{ github.event.head_commit.message }}
           draft: false
           prerelease: false
@@ -111,7 +111,7 @@ jobs:
   notification:
       name: Slack Notification
       environment: cicd
-      needs: deploy
+      needs: [deploy, version]
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v3
