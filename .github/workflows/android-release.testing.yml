@@ -93,8 +93,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: v${{ needs.version.outputs.value }}
-          release_name: Release v${{ needs.version.outputs.value }}
+          tag_name: v${{ needs.version.outputs.value }}-testing
+          release_name: Release v${{ needs.version.outputs.value }}-testing
           body: ${{ github.event.head_commit.message }}
           draft: false
           prerelease: false
