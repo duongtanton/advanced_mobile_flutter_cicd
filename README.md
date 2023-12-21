@@ -11,7 +11,7 @@ and flow the steps below.
 1. Create a new flutter project <a href="https://docs.flutter.dev/get-started/codelab">here</a>:
 
 2. Config your project follow the steps <a href="https://docs.flutter.dev/deployment/android">here</a>:
-   - Important step: You must sign your app follow <a href="https://docs.flutter.dev/deployment/android#sign-the-app">hear</a>. 
+   - Important step: You must sign your app follow <a href="https://docs.flutter.dev/deployment/android#sign-the-app">here</a>. 
 
 3. Config your repository to build, test and release follow the steps bellow:
     - Add environment secrets: https://github.com/username/repo-name/settings/secrets/actions
@@ -29,7 +29,7 @@ and flow the steps below.
           - Guide: https://www.svix.com/resources/guides/how-to-get-slack-webhook-url/ 
     - To enable the job release tag and push to store you must uncomment the code in `.github/workflows/android-release.yml` file.
 3. Trigger the workflow to build, test and release your app.
-    - You can trigger the workflow by push code or pull request to main/beta/testing branch.
+    - You can trigger the workflow by push code or pull request to main/beta/testing branch with commit or pull message is always contain "Version: x.y.z".
     - You can check and change with your requirement, the workflow status in: .github/workflows/android-release.yml
 
 ## References
