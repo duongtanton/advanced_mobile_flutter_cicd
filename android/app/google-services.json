@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "361878183445",
+    "project_id": "flutter-cicd-408702",
+    "storage_bucket": "flutter-cicd-408702.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361878183445:android:c622602a3146447150781c",
+        "android_client_info": {
+          "package_name": "university.hcmus.advanced_mobile_flutter_cicd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7EjFULnGEh_SCZ0Lm5aDLgjuziGwQyt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
