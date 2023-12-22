@@ -24,7 +24,6 @@ With cicd the only thing you can do is merge your code to main/beta/testing bran
 
 ## With cicd
 
-
 1. Config your repository to build, test and release follow the steps bellow:
     - Add environment secrets: https://github.com/username/repo-name/settings/secrets/actions
         - Add `KEYSTORE_BASE64` secret: 
