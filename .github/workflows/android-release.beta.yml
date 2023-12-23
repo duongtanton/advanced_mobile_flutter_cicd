@@ -9,11 +9,11 @@ jobs:
     name: Get version of build
     runs-on: ubuntu-latest
     outputs:
-      value: ${{ steps.fututre.outputs.value }}
+      value: ${{ steps.future.outputs.value }}
     steps:
       - uses: actions/checkout@v3
       - name: Extract version from commit message
-        id: fututre
+        id: future
         run: |
           input_string="${{ github.event.head_commit.message }}"
           regex_pattern='Version: (([0-9])+\.([0-9])+\.([0-9])+)'
