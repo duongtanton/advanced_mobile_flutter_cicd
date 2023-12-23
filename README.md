@@ -7,7 +7,7 @@ and flow the steps below.
 ## Common 
 1. Create a new flutter project <a href="https://docs.flutter.dev/get-started/codelab">here</a>:
 
-2. Config your project follow the steps <a href="https://docs.flutter.dev/deployment/android">here</a>:
+2. Config your project follow the steps <a href="https://docs.flutter.dev/deployment/android">here</a> android deployment:
     - Important step: You must sign your app follow <a href="https://docs.flutter.dev/deployment/android#sign-the-app">here</a>.
 
 ## Without cicd
